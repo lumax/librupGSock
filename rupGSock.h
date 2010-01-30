@@ -12,7 +12,6 @@ typedef struct
   GPollFD fd;
   struct sockaddr_un sa;
   gint timeout;
-  guint GMainContextID;
   int verbose;
   gboolean (*error)(GSource * src);
   gboolean (*hup)(GSource * src);
